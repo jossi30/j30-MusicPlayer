@@ -73,7 +73,7 @@ const Player = () => {
 	};
 
 	return (
-		<div className="w-full fixed bottom-0 bg-[#000] h-20 md:py-[44px] py-2 px-5 flex items-center justify-between z-50">
+		<div className="w-full fixed bottom-0 bg-[#000] h-20 md:py-[54px] py-2 px-5 flex items-center justify-between z-50">
 			<div className="flex items-center gap-4">
 				<img
 					src={cover}
@@ -89,8 +89,8 @@ const Player = () => {
 				<div className="flex items-center gap-4 w-full">
 					<PlayBack
 						color={"#b2b2b2"}
-						width="27px"
-						height="27px"
+						width="17px"
+						height="17px"
 						cssClasses={"cursor-pointer"}
 					/>
 					{!play ? (
@@ -112,8 +112,8 @@ const Player = () => {
 					)}
 					<PlayForward
 						color={"#b2b2b2"}
-						width="27px"
-						height="27px"
+						width="17px"
+						height="17px"
 						cssClasses={"cursor-pointer"}
 					/>
 					<div className="flex items-center w-full gap-2">
@@ -121,7 +121,7 @@ const Player = () => {
 							{formatTime(currentTime)}
 						</span>
 						<div
-							className="md:w-[950px] w-[110px] bg-[#4d4d4d] rounded-md h-[6px] relative cursor-pointer"
+							className="md:w-[750px] w-[110px] bg-[#4d4d4d] rounded-md h-[6px] relative cursor-pointer"
 							onClick={handleProgressBarClick}
 							onMouseDown={handleDragStart}
 							onMouseMove={handleDragMove}
@@ -144,16 +144,16 @@ const Player = () => {
 				{volume === "0" ? (
 					<VolumeMuteOutline
 						color={"#b3b3b3"}
-						width={"25px"}
-						height={"25px"}
+						width={"20px"}
+						height={"20px"}
 						onClick={() => setVolume("100")}
 						cssClasses={"cursor-pointer"}
 					/>
 				) : (
 					<VolumeMediumOutline
 						color={"#b3b3b3"}
-						width={"25px"}
-						height={"25px"}
+						width={"20px"}
+						height={"20px"}
 						onClick={() => setVolume("0")}
 						cssClasses={"cursor-pointer"}
 					/>
